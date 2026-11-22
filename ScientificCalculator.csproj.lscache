@@ -20,18 +20,18 @@ BaseOutputPath=bin/
 DebugSymbols=true
 EnableHotReloadInRuntimeConfigDevFile=true
 HotReloadBrowserToolsEnabled=false
-IntermediateOutputPath=obj/Debug/net9.0/
-MaxSupportedLangVersion=13.0
+IntermediateOutputPath=obj/Debug/net11.0/
+MaxSupportedLangVersion=15.0
 Optimize=false
 OutputType=Exe
 ProjectAssetsFile=<PATH>obj/project.assets.json
 RootNamespace=ScientificCalculator
-TargetFramework=net9.0
+TargetFramework=net11.0
 TargetFrameworkIdentifier=.NETCoreApp
-TargetFrameworkVersion=v9.0
-TargetPath=<PATH>bin/Debug/net9.0/ScientificCalculator.dll
-TargetRefPath=<PATH>obj/Debug/net9.0/ref/ScientificCalculator.dll
-TemporaryDependencyNodeTargetIdentifier=net9.0
+TargetFrameworkVersion=v11.0
+TargetPath=<PATH>bin/Debug/net11.0/ScientificCalculator.dll
+TargetRefPath=<PATH>obj/Debug/net11.0/ref/ScientificCalculator.dll
+TemporaryDependencyNodeTargetIdentifier=net11.0
 
 [commandLineArguments]
 /noconfig
@@ -41,27 +41,28 @@ TemporaryDependencyNodeTargetIdentifier=net9.0
 /fullpaths
 /nostdlib+
 /errorreport:prompt
-/warn:9
-/define:TRACE;DEBUG;NET;NET9_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/warn:11
+/define:TRACE;DEBUG;NET;NET11_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NET11_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /highentropyva+
 /nullable:enable
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
 /debug+
 /debug:portable
 /filealign:512
 /optimize-
-/out:obj/Debug/net9.0/ScientificCalculator.dll
-/refout:obj/Debug/net9.0/refint/ScientificCalculator.dll
+/out:obj/Debug/net11.0/ScientificCalculator.dll
+/refout:obj/Debug/net11.0/refint/ScientificCalculator.dll
 /target:exe
 /warnaserror-
 /utf8output
 /win32icon:Assets/icon.ico
 /deterministic+
-/langversion:13.0
+/langversion:15.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
-obj/Debug/net9.0/
- .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+obj/Debug/net11.0/
+ .NETCoreApp,Version=v11.0.AssemblyAttributes.cs
  ScientificCalculator.AssemblyInfo.cs
  ScientificCalculator.GlobalUsings.g.cs
 Program.cs
@@ -80,7 +81,7 @@ Microsoft.NETCore.App.Ref
 Microsoft.NET.Sdk/analyzers
 
 [analyzerConfigFiles]
-obj/Debug/net9.0/ScientificCalculator.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net11.0/ScientificCalculator.GeneratedMSBuildEditorConfig.editorconfig
 
 [projectReferences]
 

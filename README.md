@@ -14,21 +14,21 @@
 
 ---
 ## Overview
-**Scientific Calculator** is a menu-driven console application developed in C#. It brings basic arithmetic, scientific functions, and calculation-history tools together in a simple terminal interface.
-
+Scientific Calculator is a menu-driven console application developed in C#. It brings basic arithmetic, scientific functions, and calculation-history tools together in a simple terminal interface.
 The calculator supports operations such as addition, subtraction, multiplication, division, powers, square roots, factorials, trigonometry, logarithms, and exponential calculations. It also lets you review previous calculations and reuse the last result.
+
 ---
 ## Features
-- **Basic arithmetic** — addition, subtraction, multiplication, division, and modulus.
-- **Advanced mathematics** — powers, square roots, factorials, and absolute values.
-- **Trigonometry** — sine, cosine, and tangent, with angles entered in degrees.
-- **Logarithmic functions** — base-10 logarithm (`log`) and natural logarithm (`ln`).
-- **Exponential function** — calculate `eˣ`.
-- **Calculation history** — view or clear calculations from the current session.
-- **Last-result reuse** — press Enter at a number prompt to use the previous result.
-- **Console feedback** — color-coded results, errors, and notifications.
+- Basic arithmetic — addition, subtraction, multiplication, division, and modulus.
+- Advanced mathematics — powers, square roots, factorials, and absolute values.
+- Trigonometry — sine, cosine, and tangent, with angles entered in degrees.
+- Logarithmic functions — base-10 logarithm (`log`) and natural logarithm (`ln`).
+- Exponential function — calculate `eˣ`.
+- Calculation history — view or clear calculations from the current session.
+- Last-result reuse — press Enter at a number prompt to use the previous result.
+- Console feedback — color-coded results, errors, and notifications.
 
-#### Console Color Scheme
+<ins> Console Color Scheme </ins> <br>
 The calculator uses a simple color-coded console interface to improve readability and user experience.
 
 | Purpose | Console Color | HEX Reference |
@@ -37,21 +37,21 @@ The calculator uses a simple color-coded console interface to improve readabilit
 | Error Messages | `ConsoleColor.Red` | `#FF0000` |
 | Notifications | `ConsoleColor.Yellow` | `#FFFF00` |
 
-**Color Details:**
-  - **Green (`#00FF00`)** – Displays successful calculation results.
+<ins> Color Details </ins> <br>
+  -  **Green (`#00FF00`)** – Displays successful calculation results.
   - **Red (`#FF0000`)** – Displays errors and invalid inputs.
   - **Yellow (`#FFFF00`)** – Displays notifications, calculation history, and exit messages.
 
-**Terminal Background:**
+<ins> Terminal Background </ins> <br>
 The calculator does not define its own background color. It uses the terminal's configured appearance.
 
 - Light background reference: `#FFFFFF`
 - Dark background reference: `#000000`
 
-> **Note:** HEX values are reference colors. Actual console colors depend on the terminal's color palette.
+**Note:** HEX values are reference colors. Actual console colors depend on the terminal's color palette.
 
 - **Input and domain checks** — includes checks for invalid menu choices, division by zero, negative square roots, and invalid logarithm inputs.
-
+---
 ## Supported Operations
 
 | Menu option | Operation | Description |
@@ -75,12 +75,13 @@ The calculator does not define its own background color. It uses the terminal's 
 | 17 | Clear history | Clears the current session's calculation history. |
 | 18 | Exit | Closes the calculator. |
 
+---
 ## Requirements
 
 - .NET 8.0 SDK or later
 - Git (to clone the repository)
 - A terminal or command prompt
-
+---
 ## Getting Started
 
 #### 1. Clone the repository
@@ -110,6 +111,7 @@ dotnet run
 
 The calculator menu will appear in your terminal. Enter the number for the operation you want to perform.
 
+---
 ## How to Use
 
 1. Choose an operation from the menu by entering its option number.
@@ -119,11 +121,12 @@ The calculator menu will appear in your terminal. Enter the number for the opera
 5. Select **16** to view the current session's history or **17** to clear it.
 6. Select **18** to exit.
 
-> **Note:** Trigonometric inputs are interpreted as degrees, not radians. Calculation history is kept in memory and is cleared when the application closes.
-
+ **Note:** Trigonometric inputs are interpreted as degrees, not radians. Calculation history is kept in memory and is cleared when the application closes.
+ 
+---
 ## Example Calculations
 
-### Addition
+#### Addition
 
 ```text
 Select an operation: 1
@@ -134,7 +137,7 @@ Number: done
 Result: 5 + 10 + 15 = 30
 ```
 
-### Factorial
+#### Factorial
 
 ```text
 Select an operation: 8
@@ -143,7 +146,7 @@ Number: done
 5! = 120
 ```
 
-### Square root
+#### Square root
 
 ```text
 Select an operation: 7
@@ -151,7 +154,7 @@ Enter a number: 16
 √16 = 4
 ```
 
-### Trigonometry
+#### Trigonometry
 
 ```text
 Select an operation: 9
@@ -159,7 +162,7 @@ Number: 30
 Number: done
 sin(30°) = 0.5
 ```
-
+---
 ## Project Structure
 
 ```text
@@ -171,20 +174,10 @@ ScientificCalculator-application/
 ├── LICENSE                      # MIT License
 └── README.md                    # Project documentation
 ```
-
+---
 ## Technical Notes
 
 - The application uses C# and the .NET `System` libraries.
 - Calculations use the `double` numeric type for most mathematical operations.
 - Factorial results are stored in a 64-bit integer; values greater than `20!` exceed that type's range.
 - The application is interactive and runs in a terminal. It does not currently provide a graphical user interface.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-<p align="center">
-  Built with C# and .NET 8.
-</p>

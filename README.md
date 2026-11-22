@@ -106,6 +106,6 @@ Angle: 30 → Result: sin(30°) = 0.5
 ```
 
 > [!TIP] 
->- Add new mathematical functions  
->- Improve error handling and UX  
->- Add cross-platform or GUI support  
+Add new mathematical functions  
+Improve error handling and UX  
+Add cross-platform or GUI support  

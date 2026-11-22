@@ -31,7 +31,7 @@ The calculator supports operations such as addition, subtraction, multiplication
 - **Last-result reuse** — press Enter at a number prompt to use the previous result.
 - **Console feedback** — color-coded results, errors, and notifications.
 
-#### Console Color Scheme
+<u> Console Color Scheme </u>
 
 The calculator uses a simple color-coded console interface to improve readability and user experience.
 

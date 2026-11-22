@@ -1,111 +1,170 @@
-<div align="center">
-  <h2>Scientific Console Calculator</h2>
+# Scientific Calculator
 
-[![.NET](https://img.shields.io/badge/.NET-11.0-blue?logo=dotnet)](https://dotnet.microsoft.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/license/mit)
+<p align="center">
+  <strong>A lightweight, interactive scientific calculator built with C# and .NET 8.</strong>
+  <br />
+  Perform everyday arithmetic and advanced mathematical calculations directly from your terminal.
+</p>
 
-</div>
-
-A **feature-rich, console-based scientific calculator** built in **C#**, with color-coded output, history management, and support for advanced mathematical operations. Perfect for developers, students, and math enthusiasts.
+<p align="center">
+  <img src="https://img.shields.io/badge/C%23-.NET%208-512BD4?logo=dotnet&logoColor=white" alt="C# and .NET 8" />
+  <img src="https://img.shields.io/badge/APP-Console-1F6FEB" alt="Console application" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License" />
+</p>
 
 ---
 
-### Table of Contents
+## Overview
 
-- [Features](#-Features)  
-- [Installation](#-Installation)  
-- [Supported Operations](#-Supported-Operations)  
-- [Examples](#-Examples)
+**Scientific Calculator** is a menu-driven console application developed in C#. It brings basic arithmetic, scientific functions, and calculation-history tools together in a simple terminal interface.
 
-### Features
+The calculator supports operations such as addition, subtraction, multiplication, division, powers, square roots, factorials, trigonometry, logarithms, and exponential calculations. It also lets you review previous calculations and reuse the last result.
 
-- **Basic Arithmetic:** `+`, `-`, `*`, `/`, `%`  
-- **Advanced Operations:** Power `^`, Square Root `√`, Factorial `!`, Absolute Value  
-- **Trigonometry:** `sin`, `cos`, `tan` (input in degrees)  
-- **Logarithms:** `log` (base 10), `ln` (natural log)  
-- **Exponential Functions:** `e^x`  
-- **History Management:** View and clear past calculations  
-- **Last Result Reuse:** Press Enter to reuse the last result  
-- **Error Handling:** Handles invalid input, division by zero, negative square roots, undefined operations  
-- **Interactive Console UI:**  
-  - Green: Results  
-  - Red: Errors  
-  - Yellow: Notifications  
+## Features
 
+- **Basic arithmetic** — addition, subtraction, multiplication, division, and modulus.
+- **Advanced mathematics** — powers, square roots, factorials, and absolute values.
+- **Trigonometry** — sine, cosine, and tangent, with angles entered in degrees.
+- **Logarithmic functions** — base-10 logarithm (`log`) and natural logarithm (`ln`).
+- **Exponential function** — calculate `eˣ`.
+- **Calculation history** — view or clear calculations from the current session.
+- **Last-result reuse** — press Enter at a number prompt to use the previous result.
+- **Console feedback** — color-coded results, errors, and notifications.
+- **Input and domain checks** — includes checks for invalid menu choices, division by zero, negative square roots, and invalid logarithm inputs.
 
-### Installation
+## Supported Operations
 
-1. Clone the repository:
+| Menu option | Operation | Description |
+|---:|---|---|
+| 1 | Addition (`+`) | Adds the entered numbers. |
+| 2 | Subtraction (`-`) | Subtracts subsequent numbers from the first number. |
+| 3 | Multiplication (`*`) | Multiplies the entered numbers. |
+| 4 | Division (`/`) | Divides the first number by subsequent numbers. |
+| 5 | Modulus (`%`) | Calculates the remainder. |
+| 6 | Power (`^`) | Raises a base to a power. |
+| 7 | Square root (`√`) | Calculates the square root of a non-negative number. |
+| 8 | Factorial (`!`) | Calculates the factorial of a non-negative integer. |
+| 9 | Sine (`sin`) | Calculates sine using degrees. |
+| 10 | Cosine (`cos`) | Calculates cosine using degrees. |
+| 11 | Tangent (`tan`) | Calculates tangent using degrees. |
+| 12 | Logarithm (`log`) | Calculates the base-10 logarithm of a positive number. |
+| 13 | Natural logarithm (`ln`) | Calculates the natural logarithm of a positive number. |
+| 14 | Exponential (`eˣ`) | Calculates the exponential function. |
+| 15 | Absolute value (`abs`) | Returns the non-negative magnitude of a number. |
+| 16 | View history | Displays calculations from the current session. |
+| 17 | Clear history | Clears the current session's calculation history. |
+| 18 | Exit | Closes the calculator. |
+
+## Requirements
+
+- .NET 8.0 SDK or later
+- Git (to clone the repository)
+- A terminal or command prompt
+
+## Getting Started
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/dahamsathmina/ScientificCalculator-application.git
+```
+
+### 2. Open the project folder
+
+```bash
 cd ScientificCalculator-application
 ```
 
-2. Install [.NET SDK 11.0+](https://dotnet.microsoft.com/download)
-3. Build the project:
+### 3. Restore and build
 
 ```bash
+dotnet restore
 dotnet build
 ```
 
-4. Run the calculator:
+### 4. Run the calculator
 
 ```bash
 dotnet run
 ```
 
+The calculator menu will appear in your terminal. Enter the number for the operation you want to perform.
 
-### Supported Operations
+## How to Use
 
-| Operation | Input | Description |
-|-----------|-------|-------------|
-| Addition | Multiple numbers | Sum of numbers |
-| Subtraction | Multiple numbers | Sequential subtraction |
-| Multiplication | Multiple numbers | Product of numbers |
-| Division | Multiple numbers | Handles division by zero |
-| Modulus | Multiple numbers | Remainder operation |
-| Power | Base and exponent | Exponentiation |
-| Square Root | Single number | Only non-negative numbers |
-| Factorial | Single number | Only non-negative integers |
-| Sin / Cos / Tan | Degrees | Trigonometric calculations |
-| Log | Positive numbers | Base 10 logarithm |
-| Ln | Positive numbers | Natural logarithm |
-| e^x | Single number | Exponential function |
-| Abs | Single number | Absolute value |
+1. Choose an operation from the menu by entering its option number.
+2. For operations that accept multiple numbers, enter each number when prompted.
+3. Type `done` and press Enter when you have finished entering numbers.
+4. Press Enter at a number prompt to reuse the previous calculation result.
+5. Select **16** to view the current session's history or **17** to clear it.
+6. Select **18** to exit.
 
+> **Note:** Trigonometric inputs are interpreted as degrees, not radians. Calculation history is kept in memory and is cleared when the application closes.
 
-> [!IMPORTANT]
->- Press **Enter** to reuse the last calculation result.  
->- Use **`done`** to finish multi-number input.  
->- View calculation history with **option 16**, clear with **option 17**.  
->- Input angles in **degrees** for trigonometric functions.  
+## Example Calculations
 
-
-### Examples
+### Addition
 
 ```text
-Addition:
-Enter choice: 1
-Numbers: 5, 10, 15 → Result: 30
-```
-```text
-Factorial:
-Enter choice: 8
-Number: 5 → Result: 5! = 120
-```
-```text
-Square Root:
-Enter choice: 7
-Number: 16 → Result: √16 = 4
-```
-```text
-Trigonometry:
-Enter choice: 9
-Angle: 30 → Result: sin(30°) = 0.5
+Select an operation: 1
+Number: 5
+Number: 10
+Number: 15
+Number: done
+Result: 5 + 10 + 15 = 30
 ```
 
-> [!TIP] 
-Add new mathematical functions  
-Improve error handling and UX  
-Add cross-platform or GUI support  
+### Factorial
+
+```text
+Select an operation: 8
+Number: 5
+Number: done
+5! = 120
+```
+
+### Square root
+
+```text
+Select an operation: 7
+Enter a number: 16
+√16 = 4
+```
+
+### Trigonometry
+
+```text
+Select an operation: 9
+Number: 30
+Number: done
+sin(30°) = 0.5
+```
+
+## Project Structure
+
+```text
+ScientificCalculator-application/
+│
+├── Assets/                      # Project assets
+├── Program.cs                   # Calculator logic and console interface
+├── ScientificCalculator.csproj  # .NET project configuration
+├── LICENSE                      # MIT License
+└── README.md                    # Project documentation
+```
+
+## Technical Notes
+
+- The application uses C# and the .NET `System` libraries.
+- Calculations use the `double` numeric type for most mathematical operations.
+- Factorial results are stored in a 64-bit integer; values greater than `20!` exceed that type's range.
+- The application is interactive and runs in a terminal. It does not currently provide a graphical user interface.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Built with C# and .NET 8.
+</p>

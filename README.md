@@ -13,15 +13,12 @@
 </p>
 
 ---
-
 ## Overview
-
 **Scientific Calculator** is a menu-driven console application developed in C#. It brings basic arithmetic, scientific functions, and calculation-history tools together in a simple terminal interface.
 
 The calculator supports operations such as addition, subtraction, multiplication, division, powers, square roots, factorials, trigonometry, logarithms, and exponential calculations. It also lets you review previous calculations and reuse the last result.
-
+---
 ## Features
-
 - **Basic arithmetic** — addition, subtraction, multiplication, division, and modulus.
 - **Advanced mathematics** — powers, square roots, factorials, and absolute values.
 - **Trigonometry** — sine, cosine, and tangent, with angles entered in degrees.
@@ -32,7 +29,6 @@ The calculator supports operations such as addition, subtraction, multiplication
 - **Console feedback** — color-coded results, errors, and notifications.
 
 #### Console Color Scheme
-
 The calculator uses a simple color-coded console interface to improve readability and user experience.
 
 | Purpose | Console Color | HEX Reference |
@@ -42,13 +38,11 @@ The calculator uses a simple color-coded console interface to improve readabilit
 | Notifications | `ConsoleColor.Yellow` | `#FFFF00` |
 
 **Color Details:**
-
-- **Green (`#00FF00`)** – Displays successful calculation results.
-- **Red (`#FF0000`)** – Displays errors and invalid inputs.
-- **Yellow (`#FFFF00`)** – Displays notifications, calculation history, and exit messages.
+  - **Green (`#00FF00`)** – Displays successful calculation results.
+  - **Red (`#FF0000`)** – Displays errors and invalid inputs.
+  - **Yellow (`#FFFF00`)** – Displays notifications, calculation history, and exit messages.
 
 **Terminal Background:**
-
 The calculator does not define its own background color. It uses the terminal's configured appearance.
 
 - Light background reference: `#FFFFFF`

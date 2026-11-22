@@ -1,7 +1,7 @@
 <div align="center">
   <h2>Scientific Console Calculator</h2>
 
-[![.NET](https://img.shields.io/badge/.NET-9.0-blue?logo=dotnet)](https://dotnet.microsoft.com/)
+[![.NET](https://img.shields.io/badge/.NET-11.0-blue?logo=dotnet)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/license/mit)
 
 </div>
@@ -42,7 +42,7 @@ git clone https://github.com/dahamsathmina/ScientificCalculator-application.git
 cd ScientificCalculator-application
 ```
 
-2. Install [.NET SDK 8.0+](https://dotnet.microsoft.com/download)  
+2. Install [.NET SDK 11.0+](https://dotnet.microsoft.com/download)
 3. Build the project:
 
 ```bash

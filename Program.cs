@@ -8,6 +8,7 @@ class ScientificCalculator
     {
         Console.WriteLine("\n==== Scientific Console XCalculator ====");
         bool running = true;
+        
         List<string> history = new List<string>();
         double lastResult = 0; // store last result
 

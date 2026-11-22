@@ -30,6 +30,32 @@ The calculator supports operations such as addition, subtraction, multiplication
 - **Calculation history** — view or clear calculations from the current session.
 - **Last-result reuse** — press Enter at a number prompt to use the previous result.
 - **Console feedback** — color-coded results, errors, and notifications.
+
+#### Console Color Scheme
+
+The calculator uses a simple color-coded console interface to improve readability and user experience.
+
+| Purpose | Console Color | HEX Reference |
+|---|---|---|
+| Successful Results | `ConsoleColor.Green` | `#00FF00` |
+| Error Messages | `ConsoleColor.Red` | `#FF0000` |
+| Notifications | `ConsoleColor.Yellow` | `#FFFF00` |
+
+**Color Details:**
+
+- **Green (`#00FF00`)** – Displays successful calculation results.
+- **Red (`#FF0000`)** – Displays errors and invalid inputs.
+- **Yellow (`#FFFF00`)** – Displays notifications, calculation history, and exit messages.
+
+**Terminal Background:**
+
+The calculator does not define its own background color. It uses the terminal's configured appearance.
+
+- Light background reference: `#FFFFFF`
+- Dark background reference: `#000000`
+
+> **Note:** HEX values are reference colors. Actual console colors depend on the terminal's color palette.
+
 - **Input and domain checks** — includes checks for invalid menu choices, division by zero, negative square roots, and invalid logarithm inputs.
 
 ## Supported Operations
@@ -63,26 +89,26 @@ The calculator supports operations such as addition, subtraction, multiplication
 
 ## Getting Started
 
-### 1. Clone the repository
+#### 1. Clone the repository
 
 ```bash
 git clone https://github.com/dahamsathmina/ScientificCalculator-application.git
 ```
 
-### 2. Open the project folder
+#### 2. Open the project folder
 
 ```bash
 cd ScientificCalculator-application
 ```
 
-### 3. Restore and build
+#### 3. Restore and build
 
 ```bash
 dotnet restore
 dotnet build
 ```
 
-### 4. Run the calculator
+#### 4. Run the calculator
 
 ```bash
 dotnet run

@@ -17,7 +17,7 @@ A **feature-rich, console-based scientific calculator** built in **C#**, with co
 - [Supported Operations](#-Supported-Operations)  
 - [Examples](#-Examples)
 
-### ⚡Features
+### Features
 
 - **Basic Arithmetic:** `+`, `-`, `*`, `/`, `%`  
 - **Advanced Operations:** Power `^`, Square Root `√`, Factorial `!`, Absolute Value  
@@ -88,15 +88,18 @@ dotnet run
 Addition:
 Enter choice: 1
 Numbers: 5, 10, 15 → Result: 30
-
+```
+```text
 Factorial:
 Enter choice: 8
 Number: 5 → Result: 5! = 120
-
+```
+```text
 Square Root:
 Enter choice: 7
 Number: 16 → Result: √16 = 4
-
+```
+```text
 Trigonometry:
 Enter choice: 9
 Angle: 30 → Result: sin(30°) = 0.5
